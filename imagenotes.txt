@@ -1,0 +1,12 @@
+void SaveImage(MultipartFile imageFile)
+{
+String folder = "/photos"/;
+byte[] bytes = imageFile.getBytes();
+Path path = Paths.get(folder+ imageFile.getOriginalFilename());
+Files.write(path, bytes);
+}
+
+<form enctype="multipart/form-data"  action="#">
+<input type="file"  name="imageFile" />
+<submit button>
+</form>

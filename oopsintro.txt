@@ -1,0 +1,79 @@
+Object Oriented programming strucuture:-
+-------------------------------------
+it is a programming methodalogy where it will provide security for data. 
+
+Object
+Class
+Data Encapsulation
+Data Abstraction
+Inheritance
+Polymarphisum
+
+Object :-
+---------
+Anything in the real world is an object which has some attribute and functionality. 
+
+ex:- 
+
+Car :-  
+	Attributes :-
+			Car Number, Model, Engine, Seating, 
+	Functionality :- 
+			Driving
+-------------------
+Student is an Object
+
+Attributes 
+	Rollno, Stdname, gender, class, phonenumber, email, ....
+Actions 
+	Reg.NewStudent, Modify StudentDetails, Preparing Marks Sheet.
+
+===================================
+Class :-  It is an encapsulated cell which meant for defining attributes and functionalities for an object. 
+
+class  <class name>
+{
+	variables (data)
+
+	methods (user defined functions)
+}
+
+
+class TestClass
+{
+	int x, y;  // data (class variables)
+	
+	void getdata()
+	{
+		x = 10;
+		y = 20;
+	}
+
+	void putdata()
+	{
+		print(x)
+		print(y)
+	}
+}
+
+Object :-  It is an instance of the class. 
+
+<Classname> <obj> = new <Classname>([parameters]);
+
+one class object(s) will be created in another class or within the same class if that class having main() method.
+
+Once object is created, we can access class members(variables and methods) with the help of object as follows
+	Object.classmember_name	
+
+TestClass tc1 = new TestClass();
+tc1.getdata();
+tc1.putdata();
+----------------------------
+
+Employee Class
+
+	empno, ename, basicsal
+
+	calculate 10% commission from basicsal
+
+create objects for two employees. 
